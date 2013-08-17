@@ -26,4 +26,7 @@ Testproject1::Application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+
+  # Give access to any site to bypass same origin policies and send cross-origin requests
+  config.action_dispatch.default_headers['Access-Control-Allow-Origin'] = '*'
 end
